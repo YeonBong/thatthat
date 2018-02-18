@@ -5,7 +5,7 @@ import {
   Switch,
 } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { LoginPage, MainPage } from 'pages'
+import { LoginPage, MainPage, MyPage } from 'pages'
 import store from 'ducks'
 
 class App extends Component {
@@ -15,6 +15,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route path="/login" component={LoginPage} />
+            <Route path="/mypage" component={MyPage} />
             <Route path="/" component={MainPage} />
           </Switch>
         </Router>
